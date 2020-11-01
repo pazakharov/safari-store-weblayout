@@ -1,3 +1,3 @@
-Верстка по макетам Figma https://www.figma.com/community/file/886136959951611710
-/screenshot папка скриншотов задания
+Р’РµСЂСЃС‚РєР° РїРѕ РјР°РєРµС‚Р°Рј Figma https://www.figma.com/community/file/886136959951611710
+/screenshot РїР°РїРєР° СЃРєСЂРёРЅС€РѕС‚РѕРІ Р·Р°РґР°РЅРёСЏ
 Slider http://lantana-studio.ru/howto/simpleslider/
