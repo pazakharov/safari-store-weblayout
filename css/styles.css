@@ -341,7 +341,7 @@ template {
 
 /* Собственно сам слайдер */
 .slider {
-  max-width: 90%;
+  max-width: 100%;
   position: relative;
   margin: auto;
   height: 1166px;
@@ -349,7 +349,7 @@ template {
 }
 
 /* Картинка мастабируется по отношению к родительскому элементу */
-.slider .item img {
+.slider .item > img {
   object-fit: cover;
   width: 100%;
   height: 1166px;
@@ -388,6 +388,7 @@ template {
 .slideText {
   z-index: 1;
   position: relative;
+  width: 100%;
   display: block;
   margin: auto;
   font-family: Mulish;
@@ -396,8 +397,17 @@ template {
   font-size: 30px;
   line-height: 14px;
   color: #fff;
-  top: 0;
+  top: -97px;
+  justify-content: center;
+  text-align: center;
   /* Тень*/
+}
+
+.slideText .d-arrow {
+  display: block;
+  margin: 16px auto 0 auto;
+  width: 23px;
+  height: 26px;
 }
 
 /* Кружочки */
@@ -493,7 +503,9 @@ body {
   width: 210px;
 }
 
-.main .header .right-top .search-box input, .main .header .right-top .search-box input:active, .main .header .right-top .search-box input:focus {
+.main .header .right-top .search-box input,
+.main .header .right-top .search-box input:active,
+.main .header .right-top .search-box input:focus {
   width: 175px;
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -585,4 +597,59 @@ body {
 
 .main .logo .logo-img {
   margin: auto;
+}
+
+.main .text-block h1 {
+  margin: 15px 0;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.main .text-block h1:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  border: solid #FFF;
+  border-width: 0 114px;
+  margin-right: -100%;
+  top: 10px;
+}
+
+.main .text-block h1:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  border: solid #FFF;
+  border-width: 0 114px;
+  margin-left: -100%;
+}
+
+.main .text-block p {
+  padding: 0px 172px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  text-indent: 20px;
+}
+
+.main .text-block hr {
+  position: relative;
+  top: -40px;
+  z-index: 0;
 }

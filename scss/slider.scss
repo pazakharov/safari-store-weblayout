@@ -1,14 +1,14 @@
 $shight:1166px;
 /* Собственно сам слайдер */
 .slider{
-    max-width: 90%;
+    max-width: 100%;
     position: relative;
     margin: auto;
     height: $shight;
     margin-bottom: 15px;
 }
 /* Картинка мастабируется по отношению к родительскому элементу */
-.slider .item img {
+.slider .item > img {
     object-fit: cover;
     width: 100%;
     height: $shight;
@@ -42,7 +42,8 @@ $shight:1166px;
 /* Заголовок слайда */
 .slideText {
     z-index: 1;
-    position: relative;
+   position: relative;
+    width: 100%;
     display: block;
     margin: auto;
     font-family: Mulish;
@@ -51,10 +52,19 @@ $shight:1166px;
     font-size: 30px;
     line-height: 14px;
     color: #fff;
-    top: 0;
+    top:-97px;
+    justify-content: center;
+    text-align: center;
     //transform: translate(-50%, -50%);
     /* Тень*/
     //text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+    .d-arrow{
+        display: block;
+        margin:16px auto 0 auto;
+        
+        width: 23px;
+        height: 26px;
+    }
 }
 /* Кружочки */
 .slider-dots {
