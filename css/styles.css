@@ -703,3 +703,67 @@ body {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
+
+.main .pagination {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  width: 100%;
+  left: 73px;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.main .pagination li {
+  display: flex;
+  position: relative;
+}
+
+.main .pagination li a,
+.main .pagination li a:link,
+.main .pagination li a:active,
+.main .pagination li a:visited {
+  color: #000;
+  margin: 0 67px 0 0;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  display: block;
+}
+
+.main .pagination li a:after,
+.main .pagination li a:link:after,
+.main .pagination li a:active:after,
+.main .pagination li a:visited:after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 31px;
+  width: 0px;
+  height: 3px;
+  margin-left: 0;
+  transition: all .3s ease;
+  background: #ED165F;
+}
+
+.main .pagination li a:hover,
+.main .pagination li a:link:hover,
+.main .pagination li a:active:hover,
+.main .pagination li a:visited:hover {
+  top: 0px;
+  color: #ED165F;
+}
+
+.main .pagination li a:hover:after,
+.main .pagination li a:link:hover:after,
+.main .pagination li a:active:hover:after,
+.main .pagination li a:visited:hover:after {
+  background: #ED165F;
+  width: 75px;
+}

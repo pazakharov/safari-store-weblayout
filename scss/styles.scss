@@ -259,7 +259,7 @@ body {
             position: relative;
             flex-grow: 1;
             flex-basis: 100%;
-           
+
 
         }
 
@@ -270,7 +270,7 @@ body {
             font-size: 20px;
             text-align: center;
             letter-spacing: 0.2px;
-            margin:0 0 12px 0;
+            margin: 0 0 12px 0;
 
         }
 
@@ -285,5 +285,69 @@ body {
         }
     }
 
+    .pagination {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+        width: 100%;
+        left: 73px;
+        position: relative;
 
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            position: relative;
+            
+
+            a,
+            a:link,
+            a:active,
+            a:visited {
+                color: #000;
+                margin: 0 67px 0 0;
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                text-decoration: none;
+                display: block;
+                
+
+
+                &:after {
+                    content: "";
+                    position:absolute;
+                    left:-33px;
+                    top: 31px;
+                    width: 0px;
+                    height: 3px;
+                    margin-left: 0;
+                    transition: all .3s ease;
+
+                    background: #ED165F;
+
+                }
+
+                &:hover {
+
+                    top: 0px;
+                    color: #ED165F;
+
+                    &:after {
+                        background: #ED165F;
+                        width: 75px;
+                    }
+                }
+            }
+        }
+    }
+
+    .up {
+        img {}
+    }
 }
