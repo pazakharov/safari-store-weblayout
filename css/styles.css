@@ -7,6 +7,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -652,4 +653,53 @@ body {
   position: relative;
   top: -40px;
   z-index: 0;
+}
+
+.main .products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 33px 0 0 52px;
+}
+
+.main .products .product-card {
+  flex-grow: 1;
+  flex-basis: 23%;
+  width: 297px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 542px;
+  margin-bottom: 98px;
+}
+
+.main .products .product-image {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.main .products .product-info {
+  top: 11px;
+  left: -24px;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.main .products h5 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin: 0 0 12px 0;
+}
+
+.main .products h6 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }

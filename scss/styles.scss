@@ -197,7 +197,7 @@ body {
                 border: solid #FFF;
                 border-width: 0 114px;
                 margin-right: -100%;
-                top:10px;
+                top: 10px;
             }
 
             &:before {
@@ -232,7 +232,58 @@ body {
         }
     }
 
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 33px 0 0 52px;
 
+        .product-card {
+            flex-grow: 1;
+            flex-basis: 23%;
+            width: 297px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 542px;
+            margin-bottom: 98px;
+        }
+
+        .product-image {
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+
+
+        .product-info {
+            top: 11px;
+            left: -24px;
+            position: relative;
+            flex-grow: 1;
+            flex-basis: 100%;
+           
+
+        }
+
+        h5 {
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            margin:0 0 12px 0;
+
+        }
+
+        h6 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            text-align: center;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+    }
 
 
 }
