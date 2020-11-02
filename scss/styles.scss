@@ -262,6 +262,10 @@ body {
         .product-image {
             flex-grow: 1;
             flex-basis: 100%;
+            
+            
+
+            
         }
 
 
@@ -495,8 +499,8 @@ body {
                 outline: none;
                 background-color: #ED165F;
                 height: 39px;
-                left:-5px;
-                color:#FFF;
+                left: -5px;
+                color: #FFF;
                 position: relative;
             }
         }
@@ -507,7 +511,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 0 25px 230px ;
+            padding: 0 0 25px 230px;
             line-height: 20px;
         }
     }
