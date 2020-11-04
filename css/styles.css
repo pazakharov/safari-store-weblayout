@@ -1000,6 +1000,15 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   width: calc(100% - 300px);
 }
 
+.main .cat3 .up {
+  top: -3px;
+}
+
+.main .cat3 .pagination {
+  left: -87px;
+  margin-top: 14px;
+}
+
 .main .cat-h1 {
   font-family: Mulish;
   font-style: normal;
@@ -1010,4 +1019,44 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   letter-spacing: 3px;
   padding: 0 0 0 51px;
   color: #000000;
+}
+
+.main .category-list {
+  list-style: none;
+  padding: 6px 0 0 1px;
+  margin: 0 0 0 0;
+  line-height: 34px;
+}
+
+.main .category-list a, .main .category-list a:link, .main .category-list a:visited, .main .category-list a:active {
+  list-style: none;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #686868;
+  text-decoration: none;
+  position: relative;
+}
+
+.main .category-list a:after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  margin-left: 0;
+  background: #FFF;
+  transition: all .3s ease;
+}
+
+.main .category-list a:active, .main .category-list a:hover {
+  color: #ED165F;
+}
+
+.main .category-list a:active:after, .main .category-list a:hover:after {
+  background: #ED165F;
+  width: calc(100% + 10px);
 }
