@@ -461,6 +461,10 @@ template {
   }
 }
 
+* {
+  font-family: Mulish;
+}
+
 *:before, *:after {
   box-sizing: border-box;
 }
@@ -1184,4 +1188,41 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
 
 .clear-div:after {
   content: '';
+}
+
+.form-price {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.form-price input:focus {
+  outline: none;
+}
+
+.form-price input[type="text"] {
+  width: 61px;
+  height: 27px;
+  box-sizing: border-box;
+  margin: 0 6px 0 6px;
+}
+
+.form-price input[type=button] {
+  box-sizing: border-box;
+  display: block;
+  width: 67px;
+  height: 27px;
+  background: #ED165F;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 0 0 0;
 }
