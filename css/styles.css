@@ -1073,6 +1073,7 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   flex-direction: row;
   flex-flow: row;
   flex-wrap: wrap;
+  margin: 0 0 36px 0;
   padding: 10px 0 0 0;
   box-sizing: border-box;
 }
@@ -1109,6 +1110,60 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   color: #fff;
   background: #ED165F;
   border: #ED165F solid 1px;
+}
+
+.main .category-color {
+  width: 300px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 0 0 36px 0;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
+}
+
+.main .category-color li {
+  width: 100px;
+  display: flex;
+  text-transform: capitalize;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  vertical-align: middle;
+  margin: 0 0px 16px 0;
+}
+
+.main .category-color li a {
+  box-sizing: border-box;
+  width: 100px;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  color: #000000;
+  border-radius: 2px;
+  padding: auto;
+  transition: all .3s ease;
+}
+
+.main .category-color li a span {
+  margin: auto;
+}
+
+.main .category-color li a:hover {
+  color: #ED165F;
+}
+
+.main .category-color li a .c-box {
+  display: flex;
+  border-radius: 2px;
+  width: 32px;
+  height: 32px;
+  margin: 0 8px 0 0;
 }
 
 .clear-div {

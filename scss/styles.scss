@@ -709,7 +709,7 @@ body {
         flex-direction: row;
         flex-flow: row;
         flex-wrap: wrap;
-
+        margin: 0 0 36px 0;
         padding: 10px 0 0 0;
         box-sizing: border-box;
 
@@ -749,6 +749,71 @@ body {
                     color: #fff;
                     background: #ED165F;
                     border: #ED165F solid 1px;
+                }
+
+            }
+
+        }
+    }
+
+    .category-color {
+        width: 300px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 0 0 36px 0;
+        padding: 10px 0 0 0;
+        box-sizing: border-box;
+
+        li {
+            width: 100px;
+            display: flex;
+            text-transform: capitalize;
+            justify-content: flex-start;
+            
+            box-sizing: border-box;
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            vertical-align: middle;
+            
+            margin: 0 0px 16px 0;
+
+            a {
+                span{margin:auto;
+                }
+                box-sizing: border-box;
+                width: 100px;
+                overflow: hidden;
+                display: flex;
+                //height: 100%;
+                //width: 100%;
+               // justify-content: center;
+                align-content: center;
+
+                //border: rgba(0, 0, 0, .5) solid 1px;
+                color: #000000;
+                border-radius: 2px;
+                padding: auto;
+                //line-height: 17px;
+                transition: all .3s ease;
+
+
+                &:hover {
+                    color: #ED165F;
+                    //background: #ED165F;
+                    //border: #ED165F solid 1px;
+                }
+
+                .c-box {
+                    display: flex;
+                    border-radius: 2px;
+                    width: 32px;
+                    height: 32px;
+                    margin: 0 8px 0 0;
                 }
 
             }
