@@ -497,7 +497,11 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   margin: 0 0 0 50px;
 }
 
-.side h3 {
+.side .hbox {
+  position: relative;
+}
+
+.side .hbox h3 {
   border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
   font-family: Mulish;
   font-style: normal;
@@ -506,6 +510,7 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   line-height: 18px;
   text-transform: uppercase;
   line-height: 44px;
+  position: relative;
 }
 
 .main {
@@ -1024,7 +1029,7 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
 .main .category-list {
   list-style: none;
   padding: 6px 0 0 1px;
-  margin: 0 0 0 0;
+  margin: 0 0 45px 0;
   line-height: 34px;
 }
 
@@ -1059,4 +1064,69 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
 .main .category-list a:active:after, .main .category-list a:hover:after {
   background: #ED165F;
   width: calc(100% + 10px);
+}
+
+.main .category-size {
+  width: 300px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
+}
+
+.main .category-size li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 15px 16px 0;
+}
+
+.main .category-size li a {
+  box-sizing: border-box;
+  min-width: 55px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+  color: #000000;
+  border-radius: 2px;
+  padding: 8px 0px 5px 0px;
+  line-height: 17px;
+  transition: all .3s ease;
+}
+
+.main .category-size li a:hover {
+  color: #fff;
+  background: #ED165F;
+  border: #ED165F solid 1px;
+}
+
+.clear-div {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #C4C4C4;
+  position: absolute;
+  left: 250px;
+  bottom: 16px;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-div:after {
+  content: '';
 }
