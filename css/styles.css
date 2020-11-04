@@ -474,6 +474,40 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   text-decoration: none;
 }
 
+.marginal {
+  height: 138px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.side {
+  display: block;
+  flex: 1 300px;
+  height: 100%;
+  box-sizing: border-box;
+  min-height: 500px;
+  padding: 12px 0 0 0;
+  margin: 0 0 0 50px;
+}
+
+.side h3 {
+  border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  line-height: 44px;
+}
+
 .main {
   height: 100vh;
   min-height: 600px;
@@ -666,6 +700,62 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   padding: 33px 0 0 52px;
 }
 
+.main .products .sort-bar {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  border-bottom: rgba(0, 0, 0, 0.5) solid 2px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 30px 0;
+}
+
+.main .products .sort-bar select {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.main .products .sort-bar select, .main .products .sort-bar select:active, .main .products .sort-bar select:focus {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 35px;
+  border: #000 solid 1px;
+  outline: none;
+  margin: -10px 79px 12px -2px;
+  align-self: center;
+  width: 195px;
+  padding: 0 0 0 18px;
+}
+
+.main .products .sort-bar select::before, .main .products .sort-bar select:active::before, .main .products .sort-bar select:focus::before {
+  content: 'Sort By:';
+}
+
+.main .products .sort-bar select option, .main .products .sort-bar select:active option, .main .products .sort-bar select:focus option {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.main .products .sort-bar select option:checked, .main .products .sort-bar select:active option:checked, .main .products .sort-bar select:focus option:checked {
+  background-color: #ED165F;
+  color: #fff;
+}
+
 .main .products .product-card {
   flex-grow: 1;
   flex-basis: 23%;
@@ -713,89 +803,7 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-
-.main .pagination-wrapper .pagination {
-  display: flex;
-  margin-top: 25px;
-  justify-content: center;
   width: 100%;
-  left: 104px;
-  position: relative;
-  list-style: none;
-  padding: 0;
-}
-
-.main .pagination-wrapper .pagination li {
-  display: flex;
-  position: relative;
-}
-
-.main .pagination-wrapper .pagination li a,
-.main .pagination-wrapper .pagination li a:link,
-.main .pagination-wrapper .pagination li a:active,
-.main .pagination-wrapper .pagination li a:visited {
-  color: #000;
-  margin: 0 67px 0 0;
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  text-decoration: none;
-  display: block;
-}
-
-.main .pagination-wrapper .pagination li a:after,
-.main .pagination-wrapper .pagination li a:link:after,
-.main .pagination-wrapper .pagination li a:active:after,
-.main .pagination-wrapper .pagination li a:visited:after {
-  content: "";
-  position: absolute;
-  left: -33px;
-  top: 31px;
-  width: 0px;
-  height: 3px;
-  margin-left: 0;
-  transition: all .3s ease;
-  background: #ED165F;
-}
-
-.main .pagination-wrapper .pagination li a:hover,
-.main .pagination-wrapper .pagination li a:link:hover,
-.main .pagination-wrapper .pagination li a:active:hover,
-.main .pagination-wrapper .pagination li a:visited:hover {
-  top: 0px;
-  color: #ED165F;
-}
-
-.main .pagination-wrapper .pagination li a:hover:after,
-.main .pagination-wrapper .pagination li a:link:hover:after,
-.main .pagination-wrapper .pagination li a:active:hover:after,
-.main .pagination-wrapper .pagination li a:visited:hover:after {
-  background: #ED165F;
-  width: 75px;
-}
-
-.main .pagination-wrapper .up {
-  display: flex;
-  width: 61px;
-  height: 50px;
-  border: #000 solid 1px;
-  border-radius: 5px;
-  align-content: center;
-  justify-content: center;
-  float: left;
-  position: relative;
-  top: 8px;
-  left: -53px;
-}
-
-.main .pagination-wrapper .up a {
-  display: flex;
-  align-self: center;
 }
 
 .main .footer {
@@ -903,4 +911,103 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   justify-content: center;
   padding: 0 0 25px 230px;
   line-height: 20px;
+}
+
+.main .pagination {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  width: 100%;
+  left: 104px;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.main .pagination li {
+  display: flex;
+  position: relative;
+}
+
+.main .pagination li a,
+.main .pagination li a:link,
+.main .pagination li a:active,
+.main .pagination li a:visited {
+  color: #000;
+  margin: 0 67px 0 0;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  display: block;
+}
+
+.main .pagination li a:after,
+.main .pagination li a:link:after,
+.main .pagination li a:active:after,
+.main .pagination li a:visited:after {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 31px;
+  width: 0px;
+  height: 3px;
+  margin-left: 0;
+  transition: all .3s ease;
+  background: #ED165F;
+}
+
+.main .pagination li a:hover,
+.main .pagination li a:link:hover,
+.main .pagination li a:active:hover,
+.main .pagination li a:visited:hover {
+  top: 0px;
+  color: #ED165F;
+}
+
+.main .pagination li a:hover:after,
+.main .pagination li a:link:hover:after,
+.main .pagination li a:active:hover:after,
+.main .pagination li a:visited:hover:after {
+  background: #ED165F;
+  width: 75px;
+}
+
+.main .up {
+  display: flex;
+  width: 61px;
+  height: 50px;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  float: left;
+  position: relative;
+  top: 8px;
+  left: -53px;
+}
+
+.main .up a {
+  display: flex;
+  align-self: center;
+}
+
+.main .cat3 {
+  width: calc(100% - 300px);
+}
+
+.main .cat-h1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 0 0 0 51px;
+  color: #000000;
 }
