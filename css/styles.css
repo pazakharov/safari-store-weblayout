@@ -1226,3 +1226,143 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
   cursor: pointer;
   margin: 0 0 0 0;
 }
+
+.hello {
+  box-sizing: border-box;
+  padding: 0 0 0 231px;
+}
+
+.hello h1 {
+  margin: -12px 0 9px 0;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+}
+
+.hello div {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.wrap-reg {
+  display: flex;
+  margin: 48px 80px 0 231px;
+}
+
+.wrap-reg * h2 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.log-in,
+.reg-in {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  padding: 0 155px 0 0;
+  box-sizing: border-box;
+  flex-basis: 50%;
+}
+
+.std-form {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  box-sizing: border-box;
+  padding: 0 0 0 0;
+}
+
+.std-form label {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  margin: 15px 0 15px 0;
+  letter-spacing: 0.2px;
+}
+
+.std-form input[type="text"] {
+  height: 56px;
+  border: #000 solid 1px;
+  border-radius: 6px;
+  margin: 0 0 18px 0;
+}
+
+.std-form input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin: 0 8px 0 0;
+  background: none;
+  border: #000 solid 1px;
+  display: none;
+}
+
+.std-form input[type="checkbox"]:checked + .remember:before {
+  background: #ED165F url("/img/check.svg") no-repeat 50% 50%;
+  border: none;
+}
+
+.std-form input[type="checkbox"] + .remember {
+  display: flex;
+  align-content: center;
+  margin: 0 0 0 0px;
+  line-height: 22px;
+}
+
+.std-form input[type="checkbox"] + .remember:before {
+  content: '';
+  margin: 0 8px 0 0px;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-image: none;
+  border: #000 solid 1px;
+  transition: all .3s ease;
+}
+
+.std-form input[type="button"] {
+  height: 47px;
+  background: #ED165F;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  margin: 31px 0 0 0;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.std-form input[type="button"] + span {
+  margin: 28px 0 0 0;
+}
+
+.std-form input[type="button"] + span a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.reg-in {
+  display: flex;
+  flex-basis: 50%;
+}
