@@ -1295,10 +1295,16 @@ body a, body a:link, body a:active, body a:visited, body a:hover {
 }
 
 .std-form input[type="text"] {
-  height: 56px;
+  height: 60px;
   border: #000 solid 1px;
   border-radius: 6px;
   margin: 0 0 18px 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.std-form input[type="text"], .std-form input[type="text"]:active {
+  outline: none;
 }
 
 .std-form input[type="checkbox"] {

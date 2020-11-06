@@ -963,10 +963,17 @@ body {
     }
 
     input[type="text"] {
-        height: 56px;
+        height: 60px;
         border: #000 solid 1px;
         border-radius: 6px;
         margin: 0 0 18px 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        &,
+        &:active {
+            outline: none;
+        }
     }
 
     input[type="checkbox"] {
@@ -1025,10 +1032,14 @@ body {
         letter-spacing: 2px;
         text-transform: uppercase;
     }
-    input[type="button"]+span{
+
+    input[type="button"] + span {
         margin: 28px 0 0 0;
-        a{text-decoration: underline;
-        color: #000}
+
+        a {
+            text-decoration: underline;
+            color: #000
+        }
     }
 }
 
